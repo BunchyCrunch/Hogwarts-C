@@ -14,6 +14,9 @@
 		FBEEBC68234C3E6500A6D563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEEBC66234C3E6500A6D563 /* LaunchScreen.storyboard */; };
 		FBEEBC6B234C3E6500A6D563 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEEBC6A234C3E6500A6D563 /* main.m */; };
 		FC2B47E0234CF6F900FC5A62 /* JSCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2B47DF234CF6F900FC5A62 /* JSCharacter.m */; };
+		FC2B47E4234D07D200FC5A62 /* JSCharacterController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2B47E3234D07D200FC5A62 /* JSCharacterController.m */; };
+		FC2B47E8234D2DB200FC5A62 /* JSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B47E7234D2DB200FC5A62 /* JSTableViewController.swift */; };
+		FC2B47EA234D2E6600FC5A62 /* JSCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B47E9234D2E6600FC5A62 /* JSCharacterTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		FBEEBC6A234C3E6500A6D563 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC2B47DE234CF6F900FC5A62 /* JSCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCharacter.h; sourceTree = "<group>"; };
 		FC2B47DF234CF6F900FC5A62 /* JSCharacter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCharacter.m; sourceTree = "<group>"; };
+		FC2B47E2234D07D200FC5A62 /* JSCharacterController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCharacterController.h; sourceTree = "<group>"; };
+		FC2B47E3234D07D200FC5A62 /* JSCharacterController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCharacterController.m; sourceTree = "<group>"; };
+		FC2B47E6234D2DB200FC5A62 /* Hogwarts-C-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hogwarts-C-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC2B47E7234D2DB200FC5A62 /* JSTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTableViewController.swift; sourceTree = "<group>"; };
+		FC2B47E9234D2E6600FC5A62 /* JSCharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSCharacterTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 				FBEEBC71234C3EBB00A6D563 /* Supporting Files */,
 				FBAE9AD4234C3F2300B8DAC9 /* Storyboards */,
 				FC2B47E1234CF70300FC5A62 /* Models */,
+				FC2B47E5234D07DB00FC5A62 /* Controllers */,
 			);
 			path = "Hogwarts-C";
 			sourceTree = "<group>";
@@ -98,6 +107,34 @@
 				FC2B47DF234CF6F900FC5A62 /* JSCharacter.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FC2B47E5234D07DB00FC5A62 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC2B47EC234D2E8900FC5A62 /* Model Controllers */,
+				FC2B47EB234D2E8400FC5A62 /* View Controllers */,
+				FC2B47E6234D2DB200FC5A62 /* Hogwarts-C-Bridging-Header.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC2B47EB234D2E8400FC5A62 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC2B47E7234D2DB200FC5A62 /* JSTableViewController.swift */,
+				FC2B47E9234D2E6600FC5A62 /* JSCharacterTableViewCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FC2B47EC234D2E8900FC5A62 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC2B47E2234D07D200FC5A62 /* JSCharacterController.h */,
+				FC2B47E3234D07D200FC5A62 /* JSCharacterController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +169,7 @@
 				TargetAttributes = {
 					FBEEBC54234C3E6300A6D563 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -175,6 +213,9 @@
 				FBEEBC6B234C3E6500A6D563 /* main.m in Sources */,
 				FC2B47E0234CF6F900FC5A62 /* JSCharacter.m in Sources */,
 				FBEEBC5D234C3E6300A6D563 /* SceneDelegate.m in Sources */,
+				FC2B47EA234D2E6600FC5A62 /* JSCharacterTableViewCell.swift in Sources */,
+				FC2B47E8234D2DB200FC5A62 /* JSTableViewController.swift in Sources */,
+				FC2B47E4234D07D200FC5A62 /* JSCharacterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
 				INFOPLIST_FILE = "$(SRCROOT)/Hogwarts-C/Supporting Files/Info.plist";
@@ -323,6 +365,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DevMountain.Hogwarts-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hogwarts-C/Controllers/Hogwarts-C-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -331,6 +376,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
 				INFOPLIST_FILE = "$(SRCROOT)/Hogwarts-C/Supporting Files/Info.plist";
@@ -340,6 +386,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.DevMountain.Hogwarts-C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hogwarts-C/Controllers/Hogwarts-C-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
